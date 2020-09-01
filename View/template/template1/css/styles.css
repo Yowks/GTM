@@ -1,0 +1,411 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{
+	font-family: 'Rajdhani', sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+h1 {font-family: 'Rajdhani', sans-serif; font-size: 2em;}
+
+/*************VARIABLES CSS**********************/
+
+:root {
+	--bleu:rgba(49,150,250,1); 
+	--orange:rgb(255, 153, 0);
+	--blanc:#FFF;
+	--noir:#000;
+	--gris:#707070;
+}
+
+/*******************HEADER***********************/
+
+#header{
+	position: fixed;
+	background: var(--bleu);
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+}
+
+#logo{
+	margin: 10vh 20%;
+	height: 25vh;
+	width: 60%;
+	background: url("../img/logotype_GTM_manager.svg") no-repeat;
+}
+
+#header nav a{
+	color: #FFF;
+	width: 100%;
+	font-size: 1.2em;
+}
+
+#header nav li{
+	padding: 1vh 0;
+}
+
+#header nav li:hover{
+	background: var(--orange);
+}
+
+/************CONTENT**************/
+
+#content{
+	width: 75%;
+	margin-left: 20%;
+	padding-left: 5%;
+}
+
+.ligne{
+	width: 100%;
+	height: 1px;
+	background: var(--noir);
+	clear: both;
+}
+
+/********CONTENT MENU*******/
+
+#menu_top{
+	height:8vh;
+	width: 100%;
+}
+
+#menu_top nav li{
+	display: inline;
+	color: var(--noir);
+	padding: 0.6vh 2%;
+	border-radius: 20px;
+	line-height: 8vh;
+}
+
+#menu_top nav li:hover{
+	background: var(--orange);
+	color: var(--blanc);
+}
+
+/*****AFFICHAGE MATERIEL*****/
+
+#affichage{
+	width:70%;
+	height: 80vh;
+	float: left;
+	overflow-y: scroll;
+	border-right: 1px solid var(--noir);
+	padding: 2vh 0 1vh;
+}
+
+#affichage table{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10vh;
+}
+
+#affichage table td, #affichage table th{
+	float: left;
+	width: 25%;
+}
+
+#affichage table th{
+	color: var(--bleu);
+	margin-bottom: 5vh
+}
+
+#affichage table td{
+	padding: 1vh 0;
+}
+
+#affichage table span, .group_form label, .group_form p{
+	color: var(--bleu);
+	font-size: 1.1em;
+}
+
+.group_form{
+	height: 4vh;
+	margin: 3vh 0;
+}
+
+.group_form input, .group_form select{
+	border: none;
+	text-align:center;
+	float: right;
+	width: 50%;
+	margin-right: 15%;
+	letter-spacing: 2px;
+	border-bottom: 1px solid var(--orange);
+	border-left: 2px solid var(--orange);
+}
+
+.button_submit{
+	border: none;
+	background: var(--orange);
+	width: 20%;
+	margin: 0 40%;
+}
+
+.group_form span{
+	font-weight: bold;
+}
+
+/*********STATUS********/
+
+.rond{
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	margin: auto;
+}
+
+.orange{
+	background: var(--orange);
+}
+
+.bleu{
+	background: var(--bleu);
+}
+
+.gris{
+	background: var(--gris);
+}
+
+/****SIDEBAR******/
+
+#sidebar_materiel{
+	width: 29%;
+	float: left;
+}
+
+#sidebar_materiel h3{
+	color: var(--bleu);
+	margin-bottom: 3vh;
+	font-size: 1em;
+}
+
+#top_sidebar{
+	width: 90%;
+	height: 38vh;
+	margin: 0 5% 4vh 5%;
+	overflow-y: scroll;
+}
+
+#bottom_sidebar{
+	width: 90%;
+	height: 38vh;
+	margin: 0 4%;
+	overflow-y: scroll;
+}
+
+.last{
+	color: #FFF;
+	background: var(--gris);
+	width: 80%;
+	padding: 5px 10px;
+	border-radius: 20px;
+	font-size: 0.9em;
+	margin-bottom: 3vh;
+}
+
+.list_reservations, #comentary{
+	font-size: 0.8em;
+	color: var(--gris);
+}
+
+.list_reservations li{
+	margin: 1vh 0;
+}
+
+#textarea_comentary{
+	margin: 2vh 0;
+	resize: none;
+	width: 85%;
+	height: 10vh;
+}
+
+#button_send{
+	float: right;
+	margin-right: 10%;
+	background: none;
+	border: none;
+	font-weight: bold;
+	font-size: 1em;
+	color: var(--bleu);
+}
+
+/******LEGENDE MATERIEL******/
+
+#legend_bottom{
+	height:8vh;
+	width: 100%;
+	line-height: 8vh;
+	clear: both;
+}
+
+#legend_bottom h2{
+	float: left;
+	color: var(--bleu);
+	margin-right: 5%;
+}
+
+.diverses_legendes, .diverses_legendes p, .diverses_legendes .rond{
+	float: left;
+}
+
+.diverses_legendes .rond{
+	margin-top: 2.5vh;
+	margin-right: 10%;
+}
+
+.diverses_legendes{
+	width: 13%;
+}
+
+#actions{
+	float: right;
+	margin-right: 5%;
+	text-align: right;
+	width: 40%;
+}
+
+.saved, .edit, .button_submit{
+	color: #FFF;
+	padding: 5px 20px;
+	border-radius: 20px;
+}
+
+.saved{
+	background: var(--bleu);
+	margin: 0 1.5%;
+}
+
+.edit{
+	background: var(--orange);
+	margin: 0 1.5%;
+}
+
+.saved:hover{
+	background: var(--blanc);
+	border: 1px solid var(--bleu);
+	color: var(--bleu);
+}
+
+.edit:hover, .button_submit:hover{
+	background: var(--blanc);
+	border: 1px solid var(--orange);
+	color: var(--orange);
+}
+
+/******************LOGIN***************************/
+.b_login {
+	width: 50%;
+	float: left;
+	height: 100vh;
+	text-align: center;
+
+}
+
+#logo_login {
+	background-color: var(--bleu);
+}
+
+#logo_login img {
+	width: auto;
+	height: 40vh;
+	transform: translate(0,70%);
+}
+
+#connect_login, #register_login {
+	 background-color: var(--blanc);
+ }
+
+#connect_login h1, #register_login h1{
+	color: var(--bleu);
+	text-decoration: underline;
+	margin: 2em;
+}
+
+#register_login{
+	overflow-y: scroll;
+}
+
+#connect_login form{
+	width: 100%;
+	transform: translate(0,50%);
+}
+
+ #register_login form{
+	 width: 100%;
+}
+
+ #register_login h1{
+	margin: 2em 2em 1em 2em;
+}
+
+#connect_login input, #register_login input {
+	padding: 20px;
+	border-radius: 50px;
+	width: 45%;
+	display: block;
+	margin:  0 auto 3em;
+	color: var(--bleu);
+	border: 2px solid var(--bleu);
+	background: var(--blanc);
+	font-family: 'Rajdhani', sans-serif;
+}
+
+#register_login input{
+	margin: 0 auto 1em;
+}
+
+#connect_login input[type=submit], #register_login input[type=submit]{
+	border: 0;
+	background: var(--orange);
+	color: var(--blanc);
+	cursor:pointer;
+	width: 51%;
+}
+
+#connect_login input[type=submit]:hover, #register_login input[type=submit]:hover{
+	border: 1px solid  var(--orange);
+	background: var(--blanc);
+	color: var(--orange);
+}
+
+#connect_login a, #register_login a{
+	color: var(--bleu);
+	font-family: 'Rajdhani', sans-serif;
+}
+
+#register_login a{
+	padding-bottom: 4em;
+}
+
+.error {float: left; font-family: 'Rajdhani', sans-serif; color: var(--orange); width: 100%; margin: 10px auto;}
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+		.b_login {
+			width: 100%;
+			float: none;
+		}
+
+		#connect_login {
+			background-color: var(--blanc);
+			height: 80vh;
+		 }
+
+		 #connect_login form {
+    transform: translate(0,5%);
+		}
+}

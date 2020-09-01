@@ -1,0 +1,1 @@
+<script src="<?= $correctSlug ?>View/scripts/filter.js"></script>

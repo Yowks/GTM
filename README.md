@@ -1,3 +1,2 @@
 # GTM
-Projet Ecole GTM
-# GTM
+Projet SAE - GTM
